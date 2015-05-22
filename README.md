@@ -10,8 +10,7 @@ The data used for the project is collected from the accelerometers from the Sams
 A full description is available at the [site](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
 where the data was obtained.
 
-The R script contains code for downloading the dataset from the required URL or an alternative would be to 
-download this repository which contains the dataset. Either ways, it is assumed that the working directory
+The R script contains code for downloading the dataset from the required URL. It is assumed that the working directory
 is set to the top level folder containing the R code.
 
 ####Details about run_analysis.R
