@@ -1,0 +1,160 @@
+---
+title: "CodeBook"
+output: html_document
+---
+
+
+ 1. subject_id                          : int
+ 30 volunteers within an age bracket of 19-48 years. Contains corresponding identifier varying
+ from 1 to 30 for each subject.
+ 
+ 2. activity                            : chr  
+ Six activities, that are, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING
+ 
+###Notes: 
+
+Features are normalized and bounded within [-1,1]
+
+Presence of t denotes time domain and f denotes frequency domain for time domain calculation and frequency domain calculations resp.
+
+ 
+ 3. tBodyAcc.mean...X                   : num  
+ 4. tBodyAcc.mean...Y                   : num  
+ 5. tBodyAcc.mean...Z                   : num  
+ 6. tBodyAcc.std...X                    : num  
+ 7. tBodyAcc.std...Y                    : num  
+ 8. tBodyAcc.std...Z                    : num  
+Mean and Standard Deviation of the body linear acceleration along X/Y/Z axis
+
+ 9. tGravityAcc.mean...X                : num
+ 10. tGravityAcc.mean...Y                : num
+ 11. tGravityAcc.mean...Z                : num 
+ 12. tGravityAcc.std...X                 : num  
+ 13. tGravityAcc.std...Y                 : num
+ 14. tGravityAcc.std...Z                 : num  
+Mean and Standard Deviation of the gravity acceleration along X/Y/Z axis 
+ 
+ 15. tBodyAccJerk.mean...X               : num 
+ 16. tBodyAccJerk.mean...Y               : num  
+ 17. tBodyAccJerk.mean...Z               : num 
+ 18. tBodyAccJerk.std...X                : num  
+ 19. tBodyAccJerk.std...Y                : num  
+ 20. tBodyAccJerk.std...Z                : num  
+Mean and Standard Deviation of the body acceleration Jerk signals along X/Y/Z axis calculated from derivation of linear body acceleration by time
+
+ 21. tBodyGyro.mean...X                  : num  
+ 22. tBodyGyro.mean...Y                  : num  
+ 23. tBodyGyro.mean...Z                  : num 
+ 24. tBodyGyro.std...X                   : num  
+ 25. tBodyGyro.std...Y                   : num  
+ 26. tBodyGyro.std...Z                   : num  
+Mean and Standard Deviation of the body angular velocity along X/Y/Z axis
+
+
+ 27. tBodyGyroJerk.mean...X              : num  
+ 28. tBodyGyroJerk.mean...Y              : num  
+ 29. tBodyGyroJerk.mean...Z              : num  
+ 30. tBodyGyroJerk.std...X               : num  
+ 31. tBodyGyroJerk.std...Y               : num  
+ 32. tBodyGyroJerk.std...Z               : num  
+Mean and Standard Deviation of the body angular velocity Jerk signals along X/Y/Z axis calculated from derivation of angular velocity by time 
+ 
+ 33. tBodyAccMag.mean..                  : num  
+ 34. tBodyAccMag.std..                   : num  
+The mean and standard deviation of the magnitude of three-dimensional body acceleration signals calculated using the Euclidean norm  
+ 
+ 35. tGravityAccMag.mean..               : num  
+ 36. tGravityAccMag.std..                : num 
+The mean and standard deviation of the magnitude of three-dimensional gravity acceleration signals calculated using the Euclidean norm 
+ 
+ 37. tBodyAccJerkMag.mean..              : num  
+ 38. tBodyAccJerkMag.std..               : num  
+The mean and standard deviation of the magnitude of three-dimensional body acceleration jerk signals calculated using the Euclidean norm 
+ 
+ 39. tBodyGyroMag.mean..                 : num  
+ 40. tBodyGyroMag.std..                  : num 
+The mean and standard deviation of the magnitude of three-dimensional body angular velocity signals calculated using the Euclidean norm 
+ 
+ 41. tBodyGyroJerkMag.mean..             : num  
+ 42. tBodyGyroJerkMag.std..              : num  
+The mean and standard deviation of the magnitude of three-dimensional angular velocity jerk signals calculated using the Euclidean norm 
+ 
+ 43. fBodyAcc.mean...X                   : num  
+ 44. fBodyAcc.mean...Y                   : num  
+ 45. fBodyAcc.mean...Z                   : num  
+ 46. fBodyAcc.std...X                    : num  
+ 47. fBodyAcc.std...Y                    : num 
+ 48. fBodyAcc.std...Z                    : num 
+Mean and standard deviation of the Fast Fourier Transform (FFT) applied to body linear acceleration along X/Y/Z axis  
+ 
+ 49. fBodyAcc.meanFreq...X               : num 
+ 50. fBodyAcc.meanFreq...Y               : num 
+ 51. fBodyAcc.meanFreq...Z               : num 
+Weighted average of the frequency components of linear body acceleration signals along X/Y/Z 
+ 
+ 52. fBodyAccJerk.mean...X               : num 
+ 53. fBodyAccJerk.mean...Y               : num  
+ 54. fBodyAccJerk.mean...Z               : num  
+ 55. fBodyAccJerk.std...X                : num  
+ 56. fBodyAccJerk.std...Y                : num  
+ 57. fBodyAccJerk.std...Z                : num  
+Mean and standard deviation of the Fast Fourier Transform (FFT) applied to body linear acceleration jerk signal along X/Y/Z axis  
+ 
+ 58. fBodyAccJerk.meanFreq...X           : num  
+ 59. fBodyAccJerk.meanFreq...Y           : num 
+ 60. fBodyAccJerk.meanFreq...Z           : num 
+Weighted average of the frequency components of linear body acceleration jerk signals along X/Y/Z 
+ 
+ 61. fBodyGyro.mean...X                  : num  
+ 62. fBodyGyro.mean...Y                  : num  
+ 63. fBodyGyro.mean...Z                  : num  
+ 64. fBodyGyro.std...X                   : num 
+ 65. fBodyGyro.std...Y                   : num 
+ 66. fBodyGyro.std...Z                   : num 
+Mean and standard deviation of the Fast Fourier Transform (FFT) applied to body angular velocity along X/Y/Z axis  
+ 
+ 67. fBodyGyro.meanFreq...X              : num 
+ 68. fBodyGyro.meanFreq...Y              : num  
+ 69. fBodyGyro.meanFreq...Z              : num  
+Weighted average of the frequency components of angular velocity signals along X/Y/Z 
+ 
+ 70. fBodyAccMag.mean..                  : num  
+ 71. fBodyAccMag.std..                   : num 
+Mean and standard deviation of the magnitude of three-dimensional linear body acceleration signals calculated using the Euclidean norm  
+ 
+ 72. fBodyAccMag.meanFreq..              : num  
+Weighted average of the frequency components of magnitude of three-dimensional linear body acceleration signals
+ 
+ 73. fBodyBodyAccJerkMag.mean..          : num  
+ 74. fBodyBodyAccJerkMag.std..           : num 
+Mean and standard deviation of the magnitude of three-dimensional linear body acceleration and its jerk signals calculated using the Euclidean norm   
+ 
+ 75. fBodyBodyAccJerkMag.meanFreq..      : num  
+Weighted average of the frequency components of magnitude of three-dimensional linear body acceleration and its jerk signals 
+ 
+ 76. fBodyBodyGyroMag.mean..             : num 
+ 77. fBodyBodyGyroMag.std..              : num  
+Mean and standard deviation of the magnitude of three-dimensional linear body acceleration and angular velocity
+ 
+ 78. fBodyBodyGyroMag.meanFreq..         : num  
+Weighted average of the frequency components of three-dimensional linear body acceleration and angular velocity
+ 
+ 79. fBodyBodyGyroJerkMag.mean..         : num  
+ 80. fBodyBodyGyroJerkMag.std..          : num  
+Mean and standard deviation of the magnitude of three-dimensional linear body acceleration and angular velocity jerk 
+ 
+ 81. fBodyBodyGyroJerkMag.meanFreq..     : num  
+Weighted average of the frequency components of three-dimensional linear body acceleration and angular velocity jerk
+ 
+ 82. angle.tBodyAccMean.gravity.         : num  
+Angle between mean of linear body acceleration and gravity signals
+
+ 83. angle.tBodyAccJerkMean..gravityMean.: num  
+ 84. angle.tBodyGyroMean.gravityMean.    : num  
+ 85. angle.tBodyGyroJerkMean.gravityMean.: num  
+Angles between mean of linear body acceleration jerk signal, angular velocity, and angular jerk signals and average gravity signals respectively
+ 
+ 86. angle.X.gravityMean.                : num  
+ 87. angle.Y.gravityMean.                : num  
+ 88. angle.Z.gravityMean.                : num  
+Angles between cumulative X axis, Y axis, Z axis signals and average gravity signals respectively
